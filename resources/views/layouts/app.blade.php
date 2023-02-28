@@ -14,7 +14,7 @@
         <div class="jumbotron">
             <div></div> 
         </div>
-        @yield('home-content')
+        @yield('main-content')
     </main>
     @include('includes.footer')
 </body>

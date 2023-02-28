@@ -1,0 +1,42 @@
+/* HEADER */
+header {
+    height: 150px;
+
+    .navbar {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        figure {
+            flex-basis: 30%;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            height: 100%;
+            flex-basis: 70%;
+            gap: 4rem;
+
+            li {
+                list-style-type: none;
+                margin-right: 2rem;
+                font-size: 1.25rem;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                height: 100%;
+
+                a {
+                    color: black;
+                }
+            }
+        }
+
+        // .active {
+        //     border-bottom: 5px solid dodgerblue;
+        //     transform: translateY(3px);
+        // }
+    }
+}

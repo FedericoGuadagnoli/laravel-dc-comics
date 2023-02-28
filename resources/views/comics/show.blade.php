@@ -6,9 +6,7 @@
 <div id="comic">
     <div class="banner">
         <div class="container">
-            <figure>
                 <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
-            </figure>
         </div>
     </div>
     <div class="comic-content">
@@ -34,51 +32,65 @@
                             <p>{{$comic['description']}}</p>
                         </div>
                     </div>
-                    <div class="advertisement">
-                        <h5>ADVERTISEMENT</h5>
-                        <figure>
-                            <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="dc power visa">
-                        </figure>
-                    </div>
+                </div>
+                <div class="advertisement">
+                    <h5>ADVERTISEMENT</h5>
+                    <figure>
+                        <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="dc">
+                    </figure>
                 </div>
             </div>
         </div>
     </div>
     <div class="comic-info">
-        <table>
-            <tr>
-              <th colspan="2">Talent</th>
-            </tr>
-            <tr>
-              <td>Art by:</td>
-              <td>
-                John Smith, Jane Doe, Michael Lee, Sarah Jones, Robert Brown,
-                Emily Wilson, David Davis, Lisa Wang, Thomas Lee, Michelle Chen
-              </td>
-            </tr>
-            <tr>
-              <td>Written by:</td>
-              <td>
-                James Johnson, Laura Lee, William Smith, Jennifer Chen, Kevin Brown,
-                Sandra Lee, Benjamin Chen, Melissa Wilson, Daniel Davis, Olivia Wang
-              </td>
-            </tr>
-            <tr>
-              <th colspan="2">Specs</th>
-            </tr>
-            <tr>
-              <td>Series:</td>
-              <td>ACTION COMICS</td>
-            </tr>
-            <tr>
-              <td>U.S. Price:</td>
-              <td>$19.99</td>
-            </tr>
-            <tr>
-              <td>On Sale Date:</td>
-              <td>Oct 02 2018</td>
-            </tr>
-          </table>          
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card talent">
+                        <div>
+                            <h1>Talent</h1>
+                        </div>
+                        <div class="artist">
+                            <span>Art by:</span>
+                            <span class="artists">
+                                {{$comic['artists']}}
+                            </span>
+                        </div>
+                        <div class="writer">
+                            <span>Written by:</span>
+                            <span class="writers">
+                                {{$comic['writers']}}
+                            </span>
+                        </div>            
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card specs">
+                        <div>
+                            <h1>Specs</h1>
+                        </div>
+                        <div class="serie">
+                            <span>Series:</span>
+                            <span class="series">
+                                {{$comic['series']}}
+                            </span>
+                        </div>
+                        <div class="price">
+                            <span>U.S. Price:</span>
+                            <span class="prices">
+                                {{$comic['price']}}
+                            </span>
+                        </div>
+                        <div class="on-sale-date">
+                            <span>On Sale Date:</span>
+                            <span class="sale-date">
+                                {{$comic['sale_date']}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

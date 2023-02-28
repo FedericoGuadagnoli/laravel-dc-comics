@@ -2,7 +2,7 @@
     <div class="container">
       <div class="navbar">
         <figure>
-            <a href="#">
+            <a href="{{ route('home')}}">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc-logo">
             </a>
         </figure>
@@ -11,7 +11,7 @@
                 <a href="{{ route('characters')}}">characters</a>
             </li>
             <li>
-                <a href="{{ route('comics')}}">comics</a>
+                <a href="{{ route('comics.index')}}">comics</a>
             </li>
             <li>
                 <a href="{{ route('movies')}}">movies</a>

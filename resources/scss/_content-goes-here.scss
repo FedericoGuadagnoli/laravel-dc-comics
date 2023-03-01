@@ -38,11 +38,12 @@
         }
     }
 
-    div {
+    .btn {
         text-align: center;
         padding: 1rem 0;
 
-        button {
+        button,
+        a {
             text-align: center;
             text-transform: uppercase;
             color: white;

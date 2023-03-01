@@ -3,8 +3,10 @@
 @section('title', 'Crea comic')
     
 @section('main-content')
-<h1>Crea comic</h1>
-<a href="{{ route('comics.index')}}">Indietro</a>
+<div class="create-comic">
+    <h1>Crea comic</h1>
+    <a href="{{ route('comics.index')}}">Indietro</a>
+</div>
 <form action="{{route('comics.store')}}" method="POST" class="form-control">
     <div class="left-form">
         <label for="title">Nome fumetto</label>

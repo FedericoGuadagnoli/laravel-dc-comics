@@ -1,10 +1,22 @@
-h1,
-a {
-    text-align: center;
-    padding: 5rem 0;
+.create-comic {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    &&a {
-        background-color: red;
+    h1 {
+        padding: 2rem 0;
+        text-transform: uppercase;
+
+    }
+
+    a {
+        background-color: dodgerblue;
+        color: white;
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        font-size: 1.5rem;
     }
 }
 
@@ -39,10 +51,15 @@ a {
     }
 
     .btn {
+        align-self: flex-end;
+
         button {
             background-color: rgb(6, 148, 6);
-            padding: 10px;
+            padding: 10px 10px;
+            font-size: 1.5rem;
             color: white;
+            border: 1px solid black;
+            border-radius: 10px;
         }
     }
 }

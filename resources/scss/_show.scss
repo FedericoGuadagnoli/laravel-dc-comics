@@ -96,19 +96,6 @@
 
                     }
 
-                    .artist,
-                    .writer {
-                        display: flex;
-
-                        span:first-child {
-                            flex-basis: 20%;
-                        }
-
-                        span:last-child {
-                            flex-basis: 80%;
-                        }
-                    }
-
                     .serie,
                     .price,
                     .on-sale-date {

@@ -46,25 +46,6 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="card talent">
-                        <div>
-                            <h1>Talent</h1>
-                        </div>
-                        <div class="artist">
-                            <span>Art by:</span>
-                            <span class="artists">
-                                {{$comic['artists']}}
-                            </span>
-                        </div>
-                        <div class="writer">
-                            <span>Written by:</span>
-                            <span class="writers">
-                                {{$comic['writers']}}
-                            </span>
-                        </div>            
-                    </div>
-                </div>
-                <div class="col">
                     <div class="card specs">
                         <div>
                             <h1>Specs</h1>

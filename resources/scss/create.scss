@@ -1,0 +1,48 @@
+h1,
+a {
+    text-align: center;
+    padding: 5rem 0;
+
+    &&a {
+        background-color: red;
+    }
+}
+
+.form-control {
+    display: flex;
+    gap: 2rem;
+    background-color: dodgerblue;
+    border: 5px solid white;
+    justify-content: center;
+    padding: 5rem 0;
+
+    .left-form,
+    .right-form {
+        display: flex;
+        flex-direction: column;
+
+
+        input,
+        textarea {
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 5rem;
+            width: 20rem;
+            font-size: 1.5rem;
+        }
+
+        label {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .btn {
+        button {
+            background-color: rgb(6, 148, 6);
+            padding: 10px;
+            color: white;
+        }
+    }
+}

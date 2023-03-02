@@ -2,6 +2,11 @@
 
 @section('title', 'Comics')
     
+@if(session('delete'))
+<div class="alert">
+    {{session('delete')}}
+</div>
+@endif
 @section('main-content')
 <section id="Content-Goes-Here">
     <div class="container">

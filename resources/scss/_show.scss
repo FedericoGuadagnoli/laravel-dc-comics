@@ -114,4 +114,20 @@
             }
         }
     }
+
+    .btn-actions {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        a {
+            font-size: 1.5rem;
+            background-color: dodgerblue;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 10px;
+        }
+    }
 }

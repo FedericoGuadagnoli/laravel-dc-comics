@@ -74,6 +74,11 @@
         </div>
     </div>
     <div class="btn-actions">
+        <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+            @method('DELETE')
+            @csrf
+            <button>Elimina</button>
+        </form>
         <a href="{{ route('comics.edit', $comic->id)}}">Modifica</a>
         <a href="{{ route('comics.index') }}">Indietro</a>
     </div>
